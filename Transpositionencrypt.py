@@ -8,7 +8,7 @@ def main():
 
     # print encrypted string in cyphertext to the string,
     #with a | after it in case there are spaces at the end of the encrypted message
-    print(cyphertext + '|')
+    print(ciphertext + '|')
 
 def encryptMessage(key, message):
     #each string in cyphertext represents a column in the grid
@@ -29,7 +29,7 @@ def encryptMessage(key, message):
     return ''.join(ciphertext)
 
 #if transpostion.encrypt.py is run(insead as a modlue) call the main function
-if_name_ == '_main_':
- main()
+if __name__ == '__main__':
+    main()
         
     
